@@ -1,3 +1,5 @@
+package com.pmart5a;
+
 import com.pmart5a.myclass.Filter;
 import com.pmart5a.myclass.Logger;
 
@@ -5,7 +7,7 @@ import java.util.*;
 
 public class Main {
 
-    public static void main(String[] args) throws InputMismatchException {
+    public static void main(String[] args) {
         Logger logger = Logger.getLogger();
         logger.log("Запускаем программу");
         try (Scanner scanner = new Scanner(System.in)) {
@@ -46,7 +48,7 @@ public class Main {
             }
             logger.log("Завершаем программу");
         } catch (InputMismatchException e) {
-            logger.log("Ошибка! Введенно значение не соответсвует типу int или выходит за его границы.");
+            logger.log("Ошибка! Введенное значение не соответсвует типу int или выходит за его границы.");
         }
     }
 }
